@@ -88,5 +88,5 @@ test:
 production:
   <<: *default
   database: rubis_project_production
-  username: rubis_project
-  password: <%= ENV["RUBIS_PROJECT_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
+
